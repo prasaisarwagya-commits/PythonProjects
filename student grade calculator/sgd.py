@@ -18,8 +18,9 @@ def average_marks(m1 , m2 , m3):
 
 
 def main ():
-    print('\n--STUDENT GRADE CALCULATOR--')
-    print()
+    print('\n-------------------------------- ')
+    print('   STUDENT GRADE CALCULATOR')
+    print('-------------------------------- \n')
     student_name = input('Enter your name: ').capitalize()
 
     while True:
@@ -69,10 +70,12 @@ def main ():
     else:
         grade = 'F'
 
-    print()
-    print(f' --STUDENT REPORT  --')
+    print('\n-------------------------------- ')
+    print('   STUDENT REPORT')
+    print('-------------------------------- \n')
+
     print(f' Student name: {student_name}')
-    print(f'Total marks obtained: {total_marks}')
+    print(f'Total marks obtained: {total_marks}/300')
     print(f'Average marks obtained: {average_mark:.2f}')
     print(f'Grade Obtained: {grade}')
 
