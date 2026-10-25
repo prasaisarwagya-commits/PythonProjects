@@ -19,27 +19,34 @@ class BankAccount:
     def deposit(self , amount):
             if amount <=0:
                 print('The amount should be more than 0.')
+                print("-" * 40)
             else:
                 self.balance += amount 
                 print(f'Deposited Amount: Rs {amount} | Total balance: Rs {self.balance}')
+                print("-" * 40)
 
     def withdraw(self,amount):
             if amount<=0:
                 print('The amount should be more than 0 to.')
+                print("-" * 40)
             elif amount > self.balance:
                 print('Insufficient balance. Please try again.')
+                print("-" * 40)
             else:
                  self.balance -= amount
                  print(f'Withdrawn Amount: Rs {amount} | Total balance: Rs {self.balance}')
+                 print("-" * 40)
                  
                  
     def check_balance(self):
-            print('\n---BANKING REPORT---')
+            print("\n========================================")
+            print('.                  BANKING REPORT    ')
             print(f'''
                   Account Number: {self.account_number} 
                   Account Name: {self.account_name}
                   Balance: Rs {self.balance}
                   ''')
+            print("\n========================================")
 
 account1 = BankAccount(account_number='100' , account_name='Sarwagya' , balance=500)
 
